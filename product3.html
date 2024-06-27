@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Good Egg</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .product-detail img {
+            width: 80%; /* Adjust the width as needed to make the image bigger */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Good Egg</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html" class="nav-cart">Go to Cart</a>
+        </nav>
+    </header>
+    <main>
+        <div class="product-detail">
+            <img src="images/Product3.jpg" alt="The Good Egg">
+            <h2>The Good Egg</h2>
+            <p>A delightful story about being good and kind.</p>
+            <p>Price: $15.00</p>
+            <button onclick="addToCart('The Good Egg', 15)">Add to Cart</button>
+        </div>
+        <button onclick="window.history.back()">Back</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Online Book Store</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

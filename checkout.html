@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html" class="nav-cart">Go to Cart</a>
+        </nav>
+    </header>
+    <main>
+        <div id="checkout" class="checkout"></div>
+        <form onsubmit="completePurchase(event)">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div>
+                <label for="card">Card Number:</label>
+                <input type="text" id="card" name="card" required>
+            </div>
+            <button type="submit">Complete Purchase</button>
+        </form>
+        <button onclick="window.history.back()" class="back-button">Back</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Online Book Store</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
